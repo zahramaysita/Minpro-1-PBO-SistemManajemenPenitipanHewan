@@ -20,11 +20,26 @@ public class Service {
         int id = scanner.nextInt();
         scanner.nextLine();
         
+        if (id <= 0){
+            System.out.println(">> id hewan tidak falid");
+            return;
+        }
+        
         System.out.print("Nama Hewan: ");
         String nama = scanner.nextLine();
         
+        if (nama.isEmpty()){
+            System.out.println(">> Nama hewan tidak boleh kosong!");
+            return;
+        }
+        
         System.out.print("Jenis Hewan: ");
         String jenis = scanner.nextLine();
+        
+        if (nama.isEmpty()){
+            System.out.println(">> jenis hewan tidak boleh kosong!");
+            return;
+        }
         
         Hewan hewanBaru = new Hewan(id, nama, jenis);
         
