@@ -36,7 +36,7 @@ public class Service {
         System.out.print("Jenis Hewan: ");
         String jenis = scanner.nextLine();
         
-        if (nama.isEmpty()){
+        if (jenis.isEmpty()){
             System.out.println(">> jenis hewan tidak boleh kosong!");
             return;
         }
